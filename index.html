@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/novistil.css" />
+    <link rel="stylesheet" type="text/scss" href="scss/nav.css" />
+
+    <link rel="shortcut icon" href="img/logo.ico" />
+
+    <title>Trzni centar</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.jpg" alt="logo" width="40" height="15" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Početna</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galerija.html">Galerija</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prodavnice.html">Prodavnice</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="poklonkartice.html"
+                >Poklon kartice
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontakt.html">Kontakt </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="anketa.html">Anketa </a>
+            </li>
+          </ul>
+
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/"
+                ><i class="fab fa-instagram-square"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/com"
+                ><i class="fab fa-twitter-square"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="carouselExampleDark"
+      class="carousel carousel-dark slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="img/slider1.jpg" class="d-block w-100" alt="Usce" />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="img/slider2.jpg" class="d-block w-100" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/slider3.jpg" class="d-block w-100" alt="Usce" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section id="tumbnails">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="img/anketamozda.png"
+                class="card-img-top"
+                alt="Anekta"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Anketa</h5>
+                <p class="card-text">
+                  Da stvorimo bolji utisak o tome šta naši potrošači žele,
+                  poslušamo njihove ideje i savete.
+                </p>
+                <a href="anketa.html" class="btn btn-outline-dark"
+                  >Detaljnije</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/mapa.jpg" class="card-img-top" alt="pingvini" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Prodavnice</h5>
+                <p class="card-text">Sve naše radnje možete pogledati ovde </br>
+                kao i njihov raspored.</p>
+                <a href="prodavnice.html" class="btn btn-outline-dark"
+                  >Detaljnije</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="img/poklonkartica.jpg"
+                class="card-img-top"
+                alt="Karte"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Poklon kartice</h5>
+                <p class="card-text">
+                  Obradujte svoje najbliže, izaberite POKLON KARTICU u svojoj
+                  omiljenoj radnji!
+                </p>
+                <a href="poklonkartice.html" class="btn btn-outline-dark"
+                  >Detaljnije</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-promo">
+      <div class="container">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="img/boljamapa.jpg"
+                width="400"
+                height="250"
+                class="img-fluid1 rounded-start"
+                alt="MAPA"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Tržni centar "UŠĆE"</h5>
+                <p class="card-text">
+                  Ovde možete pronaći naš kontakt, radno vreme i našu lokaciju.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated - avgust 2024</small>
+                </p>
+                <a
+                  class="btn btn-outline-dark"
+                  role="button"
+                  href="kontakt.html"
+                  >Vise informacija</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-promo">
+      <div class="container">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">VEST: Vikend akcija!!!</h5>
+                <p class="card-text">
+                  Za vikend od 23.08.-25.08.2024. trajaće vikend popust u
+                  određenim radnjama na sve artikle i do 30%.<br />
+                  Radno vreme vrta je svakog dana od 9h do 20h <br />
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img
+                src="img/vikendakcija.jpg"
+                width="430"
+                height="250"
+                class="img-fluid1 rounded-start"
+                alt="akcija"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-promo">
+      <div class="container">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Events: MESTO ZA MENE</h5>
+                <p class="card-text">
+                  Imamo za tebe sjajan GIVEAWAY u kom možeš osvojiti vaučer u
+                  vrednosti od 60.000 dinara za kupovinu u UŠĆE Shopping Centru!
+                  🥳 Šta je potrebno da uradiš? </br> Poseti naš Instagram profil i
+                  saznaj.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img
+                src="img/events.jpg"
+                width="430"
+                height="250"
+                class="img-fluid1 rounded-start"
+                alt="poseta zoo vrtu"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="row text-center">
+        <div class="col-12">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="index.html" class="link-light">Početna</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="galerija.html" class="link-light">Galerija</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="prodavnice.html" class="link-light">prodavnice</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="poklonkartice.html" class="link-light">poklon kartice</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="kontakt.html" class="link-light">kontakt</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="anketa.html" class="link-light">anketa</a>
+            </li>
+          </ul>
+          <p>
+            <i class="far fa-copyright" area-hidden="true"></i> 2024 Trzni
+            centar, Beograd
+            <a href=" tcusce@gmail.com " class="link-light">
+              tcusce@gmail.com
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>

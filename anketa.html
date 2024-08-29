@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/novistil.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="js/anketa.js"></script>
+
+    <link rel="shortcut icon" href="img/logo.jpg" />
+
+    <title>Trzni centar</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.jpg" alt="logo" width="40" height="15" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Početna</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galerija.html">Galerija</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prodavnice.html">Prodavnice</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="poklonkartice.html"
+                >Poklon kartice
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontakt.html">Kontakt </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="anketa.html">Anketa </a>
+            </li>
+          </ul>
+
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/"
+                ><i class="fab fa-instagram-square"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/com"
+                ><i class="fab fa-twitter-square"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row photos">
+      <div class="col-6 item">
+        <div class="anketa">
+          <div class="pitanje">
+            <label for="pitanje1"
+              >Pitanje 1: Kako biste ocenili naš trzni centar?</label
+            >
+            <br />
+            <select id="pitanje1" class="odgovor">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="pitanje">
+            <label for="pitanje2"
+              >Pitanje 2: Koliko volite odlaske u soping?</label
+            >
+            <br />
+            <select id="pitanje2" class="odgovor">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="pitanje">
+            <label for="pitanje3"
+              >Pitanje 3: Koliko cesto posecujete nase radnje?</label
+            >
+            <br />
+            <select id="pitanje3" class="odgovor">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="pitanje">
+            <label for="pitanje4"
+              >Pitanje 4: Ocenite usluznost i ljubaznost zaposlenih?</label
+            >
+            <br />
+            <select id="pitanje4" class="odgovor">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="pitanje">
+            <label for="pitanje5"
+              >Pitanje 5: Kako biste ocenili ponudu,akcije i snizenja koje
+              povremeno imamo?</label
+            >
+            <br />
+            <select id="pitanje5" class="odgovor">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 item">
+        <div class="dugme">Prosecna ocena <span id="average-score"></span></div>
+        <div class="dugme2">
+          <button
+            type="button"
+            value="Pošalji"
+            class="btn btn-outline-secondary posalji"
+            id="submit-btn"
+          >
+            Pošalji
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="statistics">
+      <h2>Statistika ankete</h2>
+      <div id="stat" class="stat-item">
+        Prosecna ocena: <span class="score"></span>
+      </div>
+    </div>
+    <footer>
+      <div class="row text-center">
+        <div class="col-12">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="index.html" class="link-light">Početna</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="galerija.html" class="link-light">Galerija</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="prodavnice.html" class="link-light">prodavnice</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="poklonkartice.html" class="link-light">poklon kartice</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="kontakt.html" class="link-light">kontakt</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="anketa.html" class="link-light">anketa</a>
+            </li>
+          </ul>
+          <p>
+            <i class="far fa-copyright" area-hidden="true"></i> 2024 Trzni
+            centar, Beograd
+            <a href=" tcusce@gmail.com " class="link-light">
+              tcusce@gmail.com
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>

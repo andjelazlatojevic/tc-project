@@ -1,0 +1,131 @@
+body {
+  background-color: rgb(228, 233, 249);
+}
+
+/*  index  */
+#carouselExampleDark {
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-bottom: 5%;
+}
+
+#tumbnails {
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+#about-promo {
+  margin-top: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+/*naslovi*/
+h2.display-4 {
+  text-align: center;
+}
+
+/*galerijaslike*/
+.col-sm-6 {
+  margin-bottom: 2%;
+}
+.col-sm-6:hover img {
+  transform: scale(1.3);
+}
+.col-sm-6 img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+
+/* footer */
+footer {
+  padding: 0.625rem 0.75rem 0rem 0.625rem;
+  bottom: 0;
+  margin-top: 3%;
+  background-color: rgb(172, 176, 172);
+  color: white;
+}
+
+#footer2 {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.list-inline {
+  margin-top: 1%;
+  font-size: 20px;
+}
+
+/*karte*/
+
+.photo-gallery2 {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-gallery2 .row {
+  justify-content: center;
+}
+
+.photo-gallery2 .item {
+  text-align: center;
+}
+
+/*anketa*/
+
+.dugme {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10%;
+}
+
+.dugme2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+button.posalji {
+  width: 200px;
+}
+
+.anketa {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.pitanje {
+  margin-bottom: 10px;
+}
+
+.odgovor {
+  width: 300px;
+  height: 30px;
+  font-size: 16px;
+}
+
+.stat-item {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.red {
+  background-color: #ffcccc;
+}
+
+.orange {
+  background-color: #ffe5b4;
+}
+
+.green {
+  background-color: #ccffcc;
+}
+
+.score {
+  font-weight: bold;
+}
